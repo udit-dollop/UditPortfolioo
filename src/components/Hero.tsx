@@ -101,7 +101,7 @@ export function Hero() {
           <div className="flex flex-col items-start text-left">
             <motion.div
               variants={itemVariants}
-              className="inline-flex items-center gap-1.5 rounded-full border border-accent-500/20 bg-accent-500/10 dark:bg-accent-500/5 px-3.5 py-1.5 text-[11px] font-badge font-bold text-accent-500 dark:text-accent-400 shadow-premium"
+              className="inline-flex items-center gap-1.5 rounded-full border border-accent-500/20 bg-accent-500/10 dark:bg-accent-500/5 px-3.5 py-1.5 text-[11px] font-bold text-accent-500 dark:text-accent-400 shadow-premium"
             >
               <span className="relative flex h-1.5 w-1.5">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent-500 opacity-75" />
@@ -121,7 +121,7 @@ export function Hero() {
 
             <motion.div
               variants={itemVariants}
-              className="mt-4 flex min-h-[2.5rem] items-center gap-1.5 font-nav text-lg text-zinc-800 dark:text-zinc-200 sm:text-xl font-semibold"
+              className="mt-4 flex min-h-[2.5rem] items-center gap-1.5 font-sans text-lg text-zinc-800 dark:text-zinc-200 sm:text-xl font-semibold"
             >
               <span>{typed}</span>
               <span className="inline-block h-5 w-[2px] animate-pulse bg-accent-500 dark:bg-accent-400" />
@@ -138,7 +138,7 @@ export function Hero() {
               <Magnetic>
                 <button
                   onClick={() => scrollTo('#projects')}
-                  className="btn-primary flex items-center gap-2 text-xs h-10 px-5 bg-accent-500 hover:bg-accent-600 text-zinc-950 hover:scale-[1.01] active:scale-[0.99] font-nav font-bold rounded-xl transition-all shadow-[0_0_12px_rgba(34,197,94,0.2)]"
+                  className="btn-primary flex items-center gap-2 text-xs h-10 px-5 bg-accent-500 hover:bg-accent-600 text-zinc-950 hover:scale-[1.01] active:scale-[0.99] font-bold rounded-xl transition-all shadow-[0_0_12px_rgba(34,197,94,0.2)]"
                 >
                   View My Work
                   <ArrowRight size={14} />
@@ -152,7 +152,7 @@ export function Hero() {
                     e.preventDefault();
                     window.open(PROFILE.linkedin, '_blank', 'noopener');
                   }}
-                  className="btn-ghost flex items-center gap-2 text-xs h-10 px-5 border border-zinc-200 dark:border-zinc-800 bg-white/50 dark:bg-zinc-900/10 text-zinc-800 dark:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800/50 hover:scale-[1.01] active:scale-[0.99] font-nav font-bold rounded-xl transition-all shadow-premium"
+                  className="btn-ghost flex items-center gap-2 text-xs h-10 px-5 border border-zinc-200 dark:border-zinc-800 bg-white/50 dark:bg-zinc-900/10 text-zinc-800 dark:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800/50 hover:scale-[1.01] active:scale-[0.99] font-bold rounded-xl transition-all shadow-premium"
                 >
                   <Download size={14} />
                   Download Resume
@@ -162,7 +162,7 @@ export function Hero() {
 
             <motion.div
               variants={itemVariants}
-              className="mt-8 flex items-center gap-4 text-xs font-badge font-semibold text-zinc-500 dark:text-zinc-400"
+              className="mt-8 flex items-center gap-4 text-xs font-semibold text-zinc-500 dark:text-zinc-400"
             >
               <span>Find me on</span>
               <div className="flex items-center gap-2">
@@ -221,7 +221,7 @@ export function Hero() {
                       <div className="text-3xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50 font-mono">
                         <StatCounter value={String(stat.value)} prefix={stat.prefix} suffix={stat.suffix} />
                       </div>
-                      <div className="mt-1.5 text-[10px] sm:text-[11px] font-badge font-semibold text-zinc-400 dark:text-zinc-500 leading-normal uppercase tracking-wider">
+                      <div className="mt-1.5 text-[10px] sm:text-[11px] font-semibold text-zinc-400 dark:text-zinc-500 leading-normal uppercase tracking-wider">
                         {displayLabel}
                       </div>
                     </div>

@@ -6,11 +6,8 @@ export default {
     extend: {
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
-        display: ['Space Grotesk', 'sans-serif'],
-        heading: ['Sora', 'sans-serif'],
-        nav: ['Plus Jakarta Sans', 'sans-serif'],
+        display: ['Inter', 'system-ui', 'sans-serif'],
         mono: ['JetBrains Mono', 'ui-monospace', 'SFMono-Regular', 'monospace'],
-        badge: ['Outfit', 'sans-serif'],
       },
       colors: {
         accent: {

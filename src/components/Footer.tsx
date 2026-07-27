@@ -9,10 +9,10 @@ export function Footer() {
       <div className="container-px mx-auto max-w-7xl py-10">
         <div className="flex flex-col items-center gap-6 md:flex-row md:justify-between">
           <div className="text-center md:text-left">
-            <p className="font-heading text-sm font-bold text-zinc-900 dark:text-zinc-50">
+            <p className="font-display text-sm font-bold text-zinc-900 dark:text-zinc-50">
               Udit Gurjar
             </p>
-            <p className="mt-1 text-[10px] font-badge text-zinc-400 dark:text-zinc-500 font-semibold uppercase tracking-wider">
+            <p className="mt-1 text-[10px] text-zinc-400 dark:text-zinc-500 font-semibold uppercase tracking-wider">
               {PROFILE.title} • Indore, India (GMT+5:30)
             </p>
           </div>
@@ -22,7 +22,7 @@ export function Footer() {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-xs font-nav font-semibold text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50 transition-colors"
+                className="text-xs font-semibold text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50 transition-colors"
               >
                 {item.label}
               </a>
@@ -45,7 +45,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 flex flex-col items-center justify-between gap-3 border-t border-zinc-200/50 dark:border-zinc-800/50 pt-6 text-center text-[10px] font-badge text-zinc-400 dark:text-zinc-500 font-semibold uppercase tracking-wider md:flex-row md:text-left">
+        <div className="mt-8 flex flex-col items-center justify-between gap-3 border-t border-zinc-200/50 dark:border-zinc-800/50 pt-6 text-center text-[10px] text-zinc-400 dark:text-zinc-500 font-semibold uppercase tracking-wider md:flex-row md:text-left">
           <p>© {new Date().getFullYear()} Udit Gurjar. All rights reserved.</p>
           <p className="inline-flex items-center gap-1">
             Built with React, TypeScript &amp; Tailwind CSS

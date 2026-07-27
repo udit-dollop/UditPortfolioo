@@ -56,11 +56,11 @@ export function Education() {
                   </span>
                 </div>
 
-                <h3 className="mt-5 text-sm font-heading font-bold leading-snug text-zinc-900 dark:text-zinc-50">
+                <h3 className="mt-5 text-sm font-bold leading-snug text-zinc-900 dark:text-zinc-50">
                   {edu.degree}
                 </h3>
                 
-                <p className="mt-1.5 inline-flex items-center gap-1.5 text-xs font-nav font-semibold text-accent-500 dark:text-accent-400">
+                <p className="mt-1.5 inline-flex items-center gap-1.5 text-xs font-semibold text-accent-500 dark:text-accent-400">
                   <BookOpen size={12} />
                   {edu.org}
                 </p>

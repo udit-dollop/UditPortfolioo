@@ -35,7 +35,7 @@ export function Navbar() {
   return (
     <>
       <header className="fixed top-4 inset-x-0 z-50 flex justify-center px-4 w-full pointer-events-none">
-        <nav className="flex h-14 w-full max-w-5xl items-center justify-between rounded-2xl border border-zinc-200/30 dark:border-zinc-800/40 bg-white/70 dark:bg-zinc-950/40 backdrop-blur-md px-6 shadow-premium transition-all duration-300 pointer-events-auto relative">
+        <nav className="flex h-14 w-full max-w-7xl items-center justify-between rounded-2xl border border-zinc-200/30 dark:border-zinc-800/40 bg-white/70 dark:bg-zinc-950/40 backdrop-blur-md px-6 shadow-premium transition-all duration-300 pointer-events-auto relative">
           
           {/* LEFT - BRAND SECTION */}
           <div className="flex items-center">
@@ -55,7 +55,7 @@ export function Navbar() {
                   <span className="font-display text-sm font-bold tracking-tight text-zinc-900 dark:text-zinc-50 leading-none">
                     Udit
                   </span>
-                  <span className="text-[9px] font-badge text-zinc-400 dark:text-zinc-500 font-medium mt-1 leading-none">
+                  <span className="text-[9px] text-zinc-400 dark:text-zinc-500 font-medium mt-1 leading-none">
                     Android Developer
                   </span>
                 </div>
@@ -77,7 +77,7 @@ export function Navbar() {
                       e.preventDefault();
                       handleNav(item.href);
                     }}
-                    className={`relative rounded-md px-3 py-1.5 text-xs font-nav font-medium transition-colors duration-200 ${
+                    className={`relative rounded-md px-3 py-1.5 text-xs font-medium transition-colors duration-200 ${
                       isActive ? 'text-accent-500 dark:text-accent-400 font-semibold' : 'text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50'
                     }`}
                   >
@@ -113,7 +113,7 @@ export function Navbar() {
                   e.preventDefault();
                   handleNav('#contact');
                 }}
-                className="inline-flex items-center justify-center rounded-full bg-accent-500 hover:bg-accent-600 text-zinc-950 px-5 h-9 text-xs hidden md:inline-flex font-nav font-bold transition-all duration-200 shadow-[0_0_12px_rgba(34,197,94,0.25)] hover:scale-[1.01] active:scale-[0.99] gap-1.5"
+                className="inline-flex items-center justify-center rounded-full bg-accent-500 hover:bg-accent-600 text-zinc-950 px-5 h-9 text-xs hidden md:inline-flex font-bold transition-all duration-200 shadow-[0_0_12px_rgba(34,197,94,0.25)] hover:scale-[1.01] active:scale-[0.99] gap-1.5"
               >
                 Contact Me
                 <ArrowRight size={14} strokeWidth={2.5} />
@@ -173,7 +173,7 @@ export function Navbar() {
                       e.preventDefault();
                       handleNav(item.href);
                     }}
-                    className={`flex items-center justify-between rounded-lg px-3.5 py-2 text-sm font-nav font-medium transition-colors ${
+                    className={`flex items-center justify-between rounded-lg px-3.5 py-2 text-sm font-medium transition-colors ${
                       isActive
                         ? 'bg-zinc-100 dark:bg-zinc-900 text-zinc-900 dark:text-zinc-50'
                         : 'text-zinc-500 hover:bg-zinc-50 dark:hover:bg-zinc-900/40 dark:text-zinc-400 dark:hover:text-zinc-50'
