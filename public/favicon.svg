@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <style>
+    :root {
+      --color-primary: #34d399;
+      --color-secondary: #059669;
+      --color-eye: #ffffff;
+      --color-bg: #09090b;
+      --color-border: rgba(52, 211, 153, 0.2);
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --color-primary: #10b981;
+        --color-secondary: #047857;
+        --color-eye: #09090b;
+        --color-bg: #ffffff;
+        --color-border: rgba(16, 185, 129, 0.2);
+      }
+    }
+    .antenna, .u-path {
+      stroke: url(#greenGrad);
+    }
+    .eye {
+      fill: var(--color-eye);
+    }
+    .border-rect {
+      fill: var(--color-bg);
+      stroke: var(--color-border);
+    }
+  </style>
+  <defs>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="var(--color-primary)" />
+      <stop offset="100%" stop-color="var(--color-secondary)" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer container with a subtle tech border -->
+  <rect x="5" y="5" width="90" height="90" rx="28" class="border-rect" stroke-width="2" />
+
+  <!-- Left antenna -->
+  <line x1="38" y1="34" x2="28" y2="20" class="antenna" stroke-width="7" stroke-linecap="round" />
+  <!-- Right antenna -->
+  <line x1="62" y1="34" x2="72" y2="20" class="antenna" stroke-width="7" stroke-linecap="round" />
+
+  <!-- The "U" shape (representing the Android/Kotlin logo aesthetic) -->
+  <path d="M32,38 L32,58 C32,68 40,76 50,76 C60,76 68,68 68,58 L68,38" fill="none" class="u-path" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Android eyes in the middle -->
+  <circle cx="43" cy="50" r="4.5" class="eye" />
+  <circle cx="57" cy="50" r="4.5" class="eye" />
+</svg>
