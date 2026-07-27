@@ -101,7 +101,7 @@ export function Contact() {
           {/* Social direct links side */}
           <motion.div variants={itemVariants} className="flex flex-col gap-6">
             <TiltSpotlightCard className="h-full">
-              <h3 className="text-xs font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">
+              <h3 className="text-xs font-badge font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">
                 Reach Me Directly
               </h3>
               
@@ -126,8 +126,8 @@ export function Contact() {
                         <s.icon size={15} />
                       </span>
                       <div className="min-w-0">
-                        <p className="text-[10px] uppercase tracking-wider font-semibold text-zinc-400 dark:text-zinc-500">{s.label}</p>
-                        <p className="truncate text-xs font-bold text-zinc-900 dark:text-zinc-50">{s.value}</p>
+                        <p className="text-[10px] font-badge uppercase tracking-wider font-semibold text-zinc-400 dark:text-zinc-500">{s.label}</p>
+                        <p className="truncate text-xs font-nav font-bold text-zinc-900 dark:text-zinc-50">{s.value}</p>
                       </div>
                       <ArrowUpRight size={14} className="ml-auto shrink-0 text-zinc-400 dark:text-zinc-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                     </a>
@@ -191,7 +191,7 @@ export function Contact() {
                 <button
                   type="submit"
                   disabled={status !== 'idle'}
-                  className="btn-primary w-full disabled:cursor-not-allowed disabled:opacity-85 flex items-center justify-center gap-2 h-9 text-xs shadow-premium"
+                  className="btn-primary w-full disabled:cursor-not-allowed disabled:opacity-85 flex items-center justify-center gap-2 h-9 text-xs font-nav font-bold shadow-premium"
                 >
                   {status === 'idle' && (
                     <>
@@ -239,7 +239,7 @@ const inputClass =
 function Field({ label, htmlFor, children }: { label: string; htmlFor: string; children: React.ReactNode }) {
   return (
     <label htmlFor={htmlFor} className="block">
-      <span className="mb-1.5 block text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">{label}</span>
+      <span className="mb-1.5 block text-[10px] font-badge font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">{label}</span>
       {children}
     </label>
   );

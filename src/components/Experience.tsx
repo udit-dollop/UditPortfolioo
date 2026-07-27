@@ -81,10 +81,10 @@ export function Experience() {
                 <div className="flex flex-col gap-4">
                   <div className="flex flex-wrap items-baseline justify-between gap-2">
                     <div className="space-y-1">
-                      <h3 className="text-sm font-bold text-zinc-900 dark:text-zinc-50">
+                      <h3 className="text-sm font-heading font-bold text-zinc-900 dark:text-zinc-50">
                         {exp.role}
                       </h3>
-                      <p className="text-xs font-semibold text-accent-500 dark:text-accent-400">
+                      <p className="text-xs font-nav font-semibold text-accent-500 dark:text-accent-400">
                         {exp.company}
                       </p>
                     </div>

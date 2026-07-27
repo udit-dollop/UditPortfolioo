@@ -105,7 +105,7 @@ export function About() {
                     <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-zinc-100 dark:bg-zinc-800 text-zinc-800 dark:text-zinc-200 group-hover:bg-accent-500/10 group-hover:text-accent-500 transition-colors">
                       <Icon size={16} />
                     </div>
-                    <h3 className="mt-3 text-xs font-bold text-zinc-900 dark:text-zinc-50">{item.title}</h3>
+                    <h3 className="mt-3 text-xs font-heading font-bold text-zinc-900 dark:text-zinc-50">{item.title}</h3>
                     <p className="mt-1 text-[11px] leading-relaxed text-zinc-400 dark:text-zinc-500">{item.body}</p>
                   </TiltSpotlightCard>
                 );
@@ -115,7 +115,7 @@ export function About() {
 
           {/* Timeline of growth */}
           <motion.div variants={itemVariants} className="flex flex-col gap-6">
-            <h3 className="text-xs font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">Timeline</h3>
+            <h3 className="text-xs font-badge font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">Timeline</h3>
             
             <div className="relative border-l border-zinc-200 dark:border-zinc-800 pl-4 ml-2 space-y-8">
               {JOURNEY.map((milestone) => (
@@ -127,10 +127,10 @@ export function About() {
                     <span className="font-mono text-xs font-semibold text-accent-500 dark:text-accent-400">
                       {milestone.year}
                     </span>
-                    <span className="text-xs font-bold text-zinc-900 dark:text-zinc-50">
+                    <span className="text-xs font-heading font-bold text-zinc-900 dark:text-zinc-50">
                       {milestone.title}
                     </span>
-                    <span className="text-[10px] text-zinc-400 dark:text-zinc-500">
+                    <span className="text-[10px] font-badge text-zinc-400 dark:text-zinc-500">
                       • {milestone.company}
                     </span>
                   </div>

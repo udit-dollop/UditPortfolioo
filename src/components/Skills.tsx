@@ -78,7 +78,7 @@ export function Skills() {
                 <Magnetic key={group.category}>
                   <button
                     onClick={() => setActiveCategory(group.category)}
-                    className={`flex items-center gap-3 rounded-xl px-4 py-2.5 text-xs font-semibold whitespace-nowrap transition-all duration-200 ${
+                    className={`flex items-center gap-3 rounded-xl px-4 py-2.5 text-xs font-nav font-semibold whitespace-nowrap transition-all duration-200 ${
                       isSelected
                         ? 'bg-zinc-900 text-white dark:bg-white dark:text-zinc-950 shadow-premium'
                         : 'text-zinc-500 hover:text-zinc-900 hover:bg-zinc-100 dark:text-zinc-400 dark:hover:text-zinc-50 dark:hover:bg-zinc-900/50'
@@ -113,7 +113,7 @@ export function Skills() {
                       <div className="flex items-center justify-between gap-4">
                         <div className="flex items-center gap-3">
                           <TechBadge name="" icon={skill.icon} size={36} />
-                          <span className="text-xs font-bold text-zinc-900 dark:text-zinc-50">
+                          <span className="text-xs font-nav font-bold text-zinc-900 dark:text-zinc-50">
                             {skill.name}
                           </span>
                         </div>

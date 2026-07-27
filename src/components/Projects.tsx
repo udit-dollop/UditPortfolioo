@@ -46,11 +46,11 @@ export function Projects() {
             >
               {/* LEFT COLUMN - COPY */}
               <div className="flex flex-col items-start justify-center relative z-10">
-                <span className="rounded-full border border-zinc-200 dark:border-zinc-800 bg-white/50 dark:bg-zinc-900/50 px-3.5 py-1 text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">
+                <span className="rounded-full border border-zinc-200 dark:border-zinc-800 bg-white/50 dark:bg-zinc-900/50 px-3.5 py-1 text-[10px] font-badge font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">
                   {activeProject.category}
                 </span>
 
-                <h3 className="mt-6 font-display text-3xl sm:text-4xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50">
+                <h3 className="mt-6 font-heading text-3xl sm:text-4xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50">
                   {activeProject.name}
                 </h3>
                 
@@ -79,7 +79,7 @@ export function Projects() {
                       href={PROFILE.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="btn-primary flex items-center gap-2 text-xs h-10 px-5 bg-accent-500 hover:bg-accent-600 text-white rounded-xl shadow-premium hover:scale-[1.01] active:scale-[0.99] transition-all"
+                      className="btn-primary flex items-center gap-2 text-xs h-10 px-5 bg-accent-500 hover:bg-accent-600 text-white rounded-xl shadow-premium hover:scale-[1.01] active:scale-[0.99] font-nav font-semibold transition-all"
                     >
                       Live Demo
                       <ArrowRight size={14} />
@@ -90,7 +90,7 @@ export function Projects() {
                       href="https://github.com"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="btn-ghost flex items-center gap-2 text-xs h-10 px-5 rounded-xl border border-zinc-200 dark:border-zinc-800 text-zinc-800 dark:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-900 shadow-premium hover:scale-[1.01] active:scale-[0.99] transition-all"
+                      className="btn-ghost flex items-center gap-2 text-xs h-10 px-5 rounded-xl border border-zinc-200 dark:border-zinc-800 text-zinc-800 dark:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-900 shadow-premium hover:scale-[1.01] active:scale-[0.99] font-nav font-semibold transition-all"
                     >
                       <Github size={14} />
                       Source Code
