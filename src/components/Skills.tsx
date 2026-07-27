@@ -140,8 +140,14 @@ export function Skills() {
         </div>
 
         {/* Infinite Horizontal Marquee */}
-        <div className="mt-20 border-y border-zinc-200/50 dark:border-zinc-800/50 py-6 overflow-hidden relative select-none">
-          <div className="flex gap-16 w-max animate-marquee hover:[animation-play-state:paused] whitespace-nowrap text-[10px] font-bold font-mono tracking-widest uppercase text-zinc-400/80 dark:text-zinc-500/80">
+        <div className="mt-20 border-y border-zinc-200/40 dark:border-zinc-800/40 py-8 overflow-hidden relative select-none">
+          {/* Left gradient overlay */}
+          <div className="absolute left-0 inset-y-0 w-24 sm:w-48 bg-gradient-to-r from-zinc-50 via-zinc-50/80 to-transparent dark:from-zinc-950 dark:via-zinc-950/80 pointer-events-none z-10" />
+          
+          {/* Right gradient overlay */}
+          <div className="absolute right-0 inset-y-0 w-24 sm:w-48 bg-gradient-to-l from-zinc-50 via-zinc-50/80 to-transparent dark:from-zinc-950 dark:via-zinc-950/80 pointer-events-none z-10" />
+
+          <div className="flex gap-12 sm:gap-20 w-max animate-marquee hover:[animation-play-state:paused] whitespace-nowrap text-base sm:text-2xl font-black text-zinc-400/50 dark:text-zinc-600/40 items-center">
             {[
               'Kotlin', 'Java', 'Android Studio', 'Jetpack Compose', 'MVVM', 'Room DB',
               'Retrofit', 'Firebase', 'Git & GitHub', 'ExoPlayer', 'Socket.io', 'Gradle'
@@ -155,12 +161,16 @@ export function Skills() {
               'Kotlin', 'Java', 'Android Studio', 'Jetpack Compose', 'MVVM', 'Room DB',
               'Retrofit', 'Firebase', 'Git & GitHub', 'ExoPlayer', 'Socket.io', 'Gradle'
             ]).map((item, idx) => (
-              <span key={idx} className="hover:text-accent-500 dark:hover:text-accent-400 transition-colors duration-200">
-                {item}
-              </span>
+              <div key={idx} className="flex items-center gap-12 sm:gap-20">
+                <span className="hover:text-accent-500 dark:hover:text-accent-400 hover:scale-105 transition-all duration-300 cursor-pointer">
+                  {item}
+                </span>
+                <span className="text-accent-500/20 dark:text-accent-400/20 font-bold select-none text-sm sm:text-xl">✦</span>
+              </div>
             ))}
           </div>
         </div>
+
       </div>
     </section>
   );
